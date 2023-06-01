@@ -1,0 +1,768 @@
+@font-face {
+    
+    src: url(../font/PokemonSolidNormal-xyWR.ttf);
+    font-family: myfont2; 
+  } 
+  @font-face {
+    
+    src: url(../font/BebasNeue-Regular.ttf);
+    font-family: myfont; 
+  } 
+  @font-face {
+    
+    src: url(../font/pixel.ttf);
+    font-family: myfont3; 
+  } 
+html,body
+{
+ height: 100%;
+ width: 100%;
+ margin: 0;
+ padding: 0;
+}
+  #homepage{
+ width: 100%;
+ height:100%;
+  }
+#bg{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#background{
+    min-width: 100%;
+    min-height: 100%;
+}
+#titlebox{
+    position: absolute;
+    top:100px;
+    left: 65%;
+    z-index: 5;
+
+}
+#titlebackground{
+    height: 250px;
+    width: 400px;
+    z-index: 50;
+  
+}
+#bgtransparent
+{
+    background-color: rgb(136, 88, 0);
+    opacity: 0.5;
+    height: 170px;
+    width: 84.5%;
+    z-index: -1;
+    position: relative;
+    top: -200px;
+    left: 8.6%;
+}
+#titletext{
+    font-size: 50px;
+    font-family: myfont2;
+    position:absolute;
+    top: 8%;
+    left: 25%;
+ color: #fdd000;
+ -webkit-text-stroke-width: 3px;
+ -webkit-text-stroke-color: #2960b7;
+}
+#titletext2{
+    
+    
+    position:absolute;
+    top: 28%;
+    left: 15%;
+    font-family: myfont2;
+    font-size: 40px;
+ color: #741d84;
+ -webkit-text-stroke-width: 3px;
+ -webkit-text-stroke-color:#fdd000;
+}
+#start{
+    animation: flicker 1s infinite;
+    font-size: 40px;
+    position: absolute;
+    font-weight: bold;
+    top: 90%;
+    left: 40%;
+    font-family: myfont;
+    color: white;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+}
+@keyframes flicker {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+    
+}
+
+#catbg{
+
+width: 100%;
+height: 100%;
+position: fixed;
+
+
+background-color: #d6b789;
+}
+.card{
+ width: 20%;  
+ height: 77%;
+ background-color: aliceblue;
+ position: absolute;
+ top: 20%;
+ left: 5%;
+ border-radius: 20px;
+ z-index: 10;
+
+}
+.image{
+    width: 90%;
+    height: 50%;
+    background-color: rgb(236, 59, 5);
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    border-radius: 10px;
+}
+.topimage{
+ width: 100%;
+ height: 100%;
+}
+#category
+{
+    display: none;
+}
+.cattext{
+    width: 85%;
+    height: 28%;
+    position: absolute;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: aliceblue;
+ top: 62%;
+ left: 5%;
+}
+.cattitle{
+    font-size: 50px;
+    font-family: myfont;
+    color: black;
+    position: absolute;
+    top: 53%;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.catbutton{
+    font-size: 20px;
+    padding: 5px;
+    color:#2960b7;
+    background-color: #fdd000;
+    position: absolute;
+    border-radius: 10px;
+
+    
+
+}
+.buttoncat{
+    position: absolute;
+    left: 38%;
+    right: 35%;
+    top: 92.5%;
+}
+#musicianC{
+    position: absolute;
+    left:26%;
+}
+#historianC{
+    position: absolute;
+    left:47%;
+}
+#cardbox{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-left: 3%;
+    margin-right: 5%;
+   
+}
+#charactersC{
+    position: absolute;
+    left:68%; 
+}
+#cattitle{
+    width: 60%;
+    height: 15%;
+    position: absolute;
+    background-color: aliceblue;
+    border-radius: 20px;
+    top :5%;
+    left: 15%;
+    border: #0f0f0d50 2px solid;
+    z-index: 500;
+}
+#cattitletext{
+    font-family: myfont2;
+    font-size: 50px;
+ color: #741d84;
+ -webkit-text-stroke-width: 3px;
+ -webkit-text-stroke-color:#fdd000;
+ position: absolute;
+ top: -40px;
+ left: 25%;
+}
+#instructions{
+color: #741d84;
+font-family: myfont;
+font-weight: bold;
+font-size: 20px;
+position: absolute;
+top: 77%;
+left: 40%;
+}
+#musicianC .image{
+    background-color: #2960b7;
+}
+#historianC .image{
+    background-color: #073174;
+}
+#charactersC .image{
+    background-color: #fdd000;
+}
+
+.circle{
+    position:relative;
+  top:-200px;
+  left: 37%;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: solid black 20px;
+    border-radius: 50%;
+   
+  }
+  .start{
+   
+   opacity: 0;
+   transition: 0.2s;
+   margin-top: 12px;
+   margin-left: 14px;
+     height: 250px;
+     width: 250px;
+     background-color: white;
+     border: solid black 10px;
+     border-radius: 50%;
+     
+  }
+  .text{
+    font-size: 40px;
+   font-weight: bold;
+   font-family: myfont;
+   margin-top: 100px;
+   margin-left: 30px;
+  }
+  
+  
+  .start:hover{
+    opacity:1;
+  } 
+  
+  
+  .open {
+    animation: open-pokeball 1s forwards;
+  }
+  
+  .open .bgtop {
+    animation: separate-top 1s forwards;
+  }
+  @keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+  
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+  }
+  .circle:hover .start {
+    animation: rotate 2s infinite forwards;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .circle:hover{
+    animation: bounce 0.5s linear;
+  }
+  
+  @keyframes open-pokeball {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes separate-top {
+    0% {
+      height: 400px;
+    }
+    100% {
+      height: 200px;
+    }
+  } 
+  
+  .title
+  {top: 700px;
+  margin-left:33%;
+  position:relative;
+  z-index: 88;
+  font-size:50px;
+  font-family: myfont3;
+  opacity: 0;
+  
+  }
+  
+  #pokeball{
+    z-index: 99;
+    height: 300px;
+    width: 300px;
+     top: 100px;
+    margin-left: 40%;
+    position:relative;
+    
+  }
+  #pokeball:hover{
+  animation: rotateP 1.5s infinite linear;
+  
+  }
+  @keyframes bounceP {
+  20%,50%,80%,to {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-30px);
+  }
+  
+  70% {
+      transform: translateY(-15px);
+  }
+  90% {
+      transform: translateY(-4px);
+  }
+  }
+  @keyframes rotateP{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform:  rotate(360deg);
+  }
+  
+  }
+  
+  #pokedex
+  {
+    position:fixed;
+  z-index: -2;
+  }
+  
+  #left{
+  
+  
+  background-color:red;
+  margin-left:0px;
+  width:650px;
+  height: 800px;
+  z-index: 1;
+  border-right: solid black 20px;
+  }
+  #right{
+  border-left: solid black 20px;
+  margin-left: 650px;
+  background-color:red;
+  width:800px;
+    height: 800px;
+    margin-top: -800px;
+    z-index: 3;
+  }
+  #dexcircle{
+  position:sticky;
+  margin-top:-138px;
+  left: 480px;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: solid black 20px;
+    border-radius: 50%;
+  }
+  .dexstart{
+   
+  opacity: 0;
+  transition: 0.2s;
+  margin-top: 12px;
+  margin-left: 14px;
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    border: solid black 10px;
+    border-radius: 50%;
+    
+  }
+  .dextext{
+   font-size: 40px;
+  font-weight: bold;
+  font-family: myfont3;
+  margin-top: 100px;
+  margin-left: 30px;
+  }
+  
+  
+  .dexstart:hover{
+   opacity:1;
+  } 
+  #dexcircle:hover .dexstart {
+  animation: rotate 2s forwards;
+  }
+  
+  @keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  }
+  #dexcircle:hover{
+  animation: bounce 0.5s linear;
+  }
+  
+  .halfcircleleft {
+  margin-top: -340px;
+  
+  position: relative;
+  top: 200px; /* adjust this value to move the half circle up or down */
+  left: 480px; /* adjust this value to move the half circle left or right */
+  height: 300px; /* adjust this value to change the size of the half circle */
+  width: 150px; /* adjust this value to change the size of the half circle */
+  background-color: white;
+  
+  border-left: solid black 20px;
+  border-top: solid black 20px;
+  border-bottom: solid black 20px;
+  border-radius:200px 0 0 200px; /* use border-radius to create the half circle shape */
+  
+  
+  }
+  
+  .halfcircleright{
+  margin-top: -800px;
+  position: relative;
+  top: 200px; /* adjust this value to move the half circle up or down */
+  left: 620px; /* adjust this value to move the half circle left or right */
+  height: 300px; /* adjust this value to change the size of the half circle */
+  width: 150px; /* adjust this value to change the size of the half circle */
+  background-color: white;
+  border-right: solid black 20px;
+  border-top: solid black 20px;
+  border-bottom: solid black 20px;
+  border-radius:0 200px 200px 0;
+  
+  }
+  #pokeball-left{
+  position: sticky;
+  margin-left: -20px;
+  margin-top:-570px;
+  height:200px;
+  width: 200px;
+  border-radius:0 0 100% 0;
+  border: solid rgb(56, 52, 52) 5px;
+  }
+  #small-left{
+  position:sticky;
+  
+  height:100px;
+  width: 100px;
+  border-radius:0 0 100% 0;
+  border: solid rgb(56, 52, 52)5px;
+  }#pokeball-bottom1{
+  position: sticky;
+  margin-left: -20px;
+  margin-top:380px;
+  height:200px;
+  width: 200px;
+  border-radius:0 100% 0 0;
+  border: solid rgb(56, 52, 52) 5px;
+  }
+  #small-bottom1{
+  position:sticky;
+   margin-top:90px;
+  height:100px;
+  width: 100px;
+  border-radius:0 100% 0 0;
+  border: solid rgb(56, 52, 52)5px;
+  }
+  #mchoice{
+   margin-left: 700px; 
+   margin-top: -500px;
+   z-index: 50;
+  }
+  .cbox{
+  
+  
+  
+  border-radius: 50px;
+  text-align: center;
+  padding: 15px 32px;
+  font-size: 30px;
+  
+  
+  
+  
+  }
+  .textc{
+  font-size: 50px;
+  margin-top: 10px;
+  }
+  #first{
+  width: 500px;
+  height: 100px;
+  background-color:white;
+  margin-bottom: 20px;
+  }
+  #second{
+  width: 500px;
+  height: 100px;
+  background-color: white;
+  margin-bottom: 20px;
+  }
+  #third{
+  width: 500px;
+  height: 100px;
+  background-color: white;
+  margin-bottom: 20px;
+  }
+  #fourth{
+  width: 500px;
+  height: 100px;
+  background-color: white;
+  }
+  .cbox:hover{
+  opacity: 1;
+  background-color: black;
+  }
+  .img{
+  width: 500px;
+  height: 500px;
+  margin-left: 50px;
+  margin-top: 50px;
+  z-index: 50;
+  }
+  .imgcolored{
+  width: 500px;
+  height: 500px;
+  margin-left: 50px;
+  margin-top: -510px;
+  z-index: 500;
+  display:none;
+  }
+  #questions
+  {
+  font-size: 40px;
+  font-family: myfont;
+  color: black;
+  margin-left: 90px;
+  z-index: 50;
+  margin-top: 10px;
+  padding-top: 20px;
+  }
+  
+  #bgC{
+   display: none;
+  }
+  #bgA{
+  display: none;
+  }
+  #bgM{
+  
+  display: none;
+  }
+  #bgH{
+  display: none;
+  }
+  #question{
+  position:fixed;
+  margin-top: 5%;
+  margin-left: 0px;
+  z-index:-2;
+  font-size:50px;
+  }
+  #questioncontainer{
+  margin-top:0px;
+  margin-left: 1%;
+  
+  height:800px;
+  width: 1300px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 15px 20px rgba(0,0,0,.2);
+  z-index: 99;
+  
+  }
+  
+  #container
+  {
+  margin-top: 1%;
+  margin-left:1%;
+  
+  opacity: 1;
+  
+  }
+  #timer{
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  text-align: center;
+  position: sticky;
+  z-index: 100;
+  margin-top: -880px;
+  margin-left: 1200px  ;
+  border: #D53C3F 10px solid;
+  }
+  .timertext{
+    font-family: myfont3;
+    font-size: 50px;
+    position: relative;
+    top: 25px;
+   
+  }
+  #lose{
+   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    z-index: 500;
+    display: none;
+    position: absolute;
+    
+  }
+  #WIN{
+   
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  z-index: 500;
+  display: none;
+  position: absolute;
+  
+  }
+  .next{
+  width: 140px;
+  height: 80px;
+
+  position: relative;
+  top:5%;
+  left: 1100px;
+  display: none;
+  z-index: 700;
+  border-radius: 20px;
+  font-family: myfont;
+    font-size: 50px;
+ color: #741d84;
+ padding: 5px;
+ background-color: white;
+ opacity: 0.8;
+ -webkit-text-stroke-width: 3px;
+ -webkit-text-stroke-color:#fdd000;
+
+  }
+  #textnext{
+    position: absolute;
+margin-top: -25px;
+margin-left: 25px;
+  }
+  .losetext{
+  font-family: myfont3;
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+  position: absolute;
+  margin-top: 30%;
+  margin-left: 400px;
+  display: none;
+  }
+  .wintext{
+  font-family: myfont3;
+  font-size: 100px;
+  color:green;
+  text-align: center;
+  z-index: 1000;
+  position: absolute;
+  margin-top:35%;
+  margin-left: 400px;
+  display: none;
+  }
+  .video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  }
+  
+  .video-background video {
+  min-width: 100%;
+  min-height: 100%;
+  }
+  #done{
+   z-index: 500;
+   position: fixed;
+ 
+  }
+  .video-background2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    display: none;
+    }
+    .video-background2 video {
+      min-width: 100%;
+      min-height: 50%;
+      }
+#congrats{
+  font-family: myfont;
+  font-size: 100px;
+color: #741d84;
+-webkit-text-stroke-width: 5px;
+-webkit-text-stroke-color:#fdd000;
+ position: absolute;
+ z-index: 600;
+ top: 5%;
+ text-align: center;
+}
